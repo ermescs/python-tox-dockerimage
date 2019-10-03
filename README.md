@@ -1,5 +1,9 @@
 # Python Tox Dockerimage
 
-[![CI Build](https://ci.younata.com/api/v1/teams/main/pipelines/Docker/jobs/Tox/badge)](https://ci.younata.com/teams/main/pipelines/Docker/jobs/Tox) [![Docker Pulls](https://img.shields.io/docker/pulls/younata/tox.svg)](https://hub.docker.com/r/younata/tox/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ermescs/tox.svg)](https://hub.docker.com/r/ermescs/tox/)
 
-Mostly for use in testing python on concourse
+* Based on python-alpine
+* Includes:
+    * tox
+    * git (e.g. for Python projects managed with [Versioneer](https://github.com/warner/python-versioneer))
+    * build-base (meta-package including compilers and other build-tools, often required when installing Python packages)
